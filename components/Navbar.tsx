@@ -17,7 +17,7 @@ export default function Navbar() {
   const pathname = usePathname()
 
   return (
-    <nav className="bg-gray-900/80 backdrop-blur-md border-b border-gray-800/50 sticky top-0 z-10 shadow-lg">
+    <nav className="bg-gray-900 bg-opacity-80 backdrop-blur-md border-b border-gray-800 border-opacity-50 sticky top-0 z-10 shadow-lg">
       <div className="max-w-5xl mx-auto px-4 flex items-center h-16">
         <Link href="/" className="text-white font-bold text-xl mr-8 hover:text-indigo-400 transition-colors duration-200 flex items-center gap-2">
           <span className="text-2xl">📚</span> Study Helper
@@ -31,7 +31,7 @@ export default function Navbar() {
               className={`nav-link ${
                 pathname === link.href
                   ? 'active text-white'
-                  : 'text-gray-400 hover:text-white hover:bg-gray-800/50'
+                  : 'text-gray-400 hover:text-white hover:bg-gray-800 hover:bg-opacity-50'
               }`}
             >
               {link.label}

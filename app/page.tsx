@@ -43,19 +43,19 @@ export default function Dashboard() {
           <span className="text-2xl">🧠</span> SRS Review Schedule
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-          <div className="bg-red-900/20 rounded-lg p-4 border border-red-800/30">
+          <div className="bg-red-900 bg-opacity-20 rounded-lg p-4 border border-red-800 border-opacity-30">
             <p className="text-3xl font-bold text-red-400 mb-1">{srs.today}</p>
             <p className="text-sm text-gray-400 font-medium">Today</p>
           </div>
-          <div className="bg-orange-900/20 rounded-lg p-4 border border-orange-800/30">
+          <div className="bg-orange-900 bg-opacity-20 rounded-lg p-4 border border-orange-800 border-opacity-30">
             <p className="text-3xl font-bold text-orange-400 mb-1">{srs.tomorrow}</p>
             <p className="text-sm text-gray-400 font-medium">Tomorrow</p>
           </div>
-          <div className="bg-yellow-900/20 rounded-lg p-4 border border-yellow-800/30">
+          <div className="bg-yellow-900 bg-opacity-20 rounded-lg p-4 border border-yellow-800 border-opacity-30">
             <p className="text-3xl font-bold text-yellow-400 mb-1">{srs.week}</p>
             <p className="text-sm text-gray-400 font-medium">This Week</p>
           </div>
-          <div className="bg-gray-800/50 rounded-lg p-4 border border-gray-700/30">
+          <div className="bg-gray-800 bg-opacity-50 rounded-lg p-4 border border-gray-700 border-opacity-30">
             <p className="text-3xl font-bold text-gray-400 mb-1">{srs.later}</p>
             <p className="text-sm text-gray-400 font-medium">Later</p>
           </div>
@@ -69,27 +69,27 @@ export default function Dashboard() {
 
       {/* Quick Actions */}
       <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
-        <Link href="/subjects" className="card group hover:border-indigo-500/30 transition-all duration-300">
+        <Link href="/subjects" className="card group hover:border-indigo-500 hover:border-opacity-30 transition-all duration-300">
           <div className="text-3xl mb-3 group-hover:scale-110 transition-transform duration-200">📖</div>
           <div className="font-semibold text-lg mb-1">Subjects</div>
           <div className="text-sm text-gray-400">{subjects.length} subjects</div>
         </Link>
-        <Link href="/quiz/srs" className="card group hover:border-purple-500/30 transition-all duration-300">
+        <Link href="/quiz/srs" className="card group hover:border-purple-500 hover:border-opacity-30 transition-all duration-300">
           <div className="text-3xl mb-3 group-hover:scale-110 transition-transform duration-200">🧠</div>
           <div className="font-semibold text-lg mb-1">SRS Quiz</div>
           <div className="text-sm text-gray-400">Smart review</div>
         </Link>
-        <Link href="/saved" className="card group hover:border-cyan-500/30 transition-all duration-300">
+        <Link href="/saved" className="card group hover:border-cyan-500 hover:border-opacity-30 transition-all duration-300">
           <div className="text-3xl mb-3 group-hover:scale-110 transition-transform duration-200">⭐</div>
           <div className="font-semibold text-lg mb-1">Saved</div>
           <div className="text-sm text-gray-400">Bookmarks</div>
         </Link>
-        <Link href="/search" className="card group hover:border-green-500/30 transition-all duration-300">
+        <Link href="/search" className="card group hover:border-green-500 hover:border-opacity-30 transition-all duration-300">
           <div className="text-3xl mb-3 group-hover:scale-110 transition-transform duration-200">🔍</div>
           <div className="font-semibold text-lg mb-1">Search</div>
           <div className="text-sm text-gray-400">Find questions</div>
         </Link>
-        <Link href="/trash" className="card group hover:border-red-500/30 transition-all duration-300">
+        <Link href="/trash" className="card group hover:border-red-500 hover:border-opacity-30 transition-all duration-300">
           <div className="text-3xl mb-3 group-hover:scale-110 transition-transform duration-200">🗑️</div>
           <div className="font-semibold text-lg mb-1">Trash</div>
           <div className="text-sm text-gray-400">Recycle bin</div>

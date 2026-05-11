@@ -39,11 +39,11 @@ body {
 /* Custom Components */
 @layer components {
   .card {
-    @apply bg-gray-900/50 backdrop-blur-sm border border-gray-800/50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:border-gray-700/50;
+    @apply bg-gray-900 bg-opacity-50 backdrop-blur-sm border border-gray-800 border-opacity-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:border-gray-700 hover:border-opacity-50;
   }
 
   .card-gradient {
-    @apply bg-gradient-to-br from-gray-900/80 to-gray-800/60 backdrop-blur-sm border border-gray-700/30 rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300;
+    @apply bg-gradient-to-br from-gray-900 from-opacity-80 to-gray-800 to-opacity-60 backdrop-blur-sm border border-gray-700 border-opacity-30 rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300;
   }
 
   .btn-primary {
