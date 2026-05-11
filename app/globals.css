@@ -4,19 +4,6 @@
 
 :root {
   color-scheme: dark;
-  --primary: #6366f1;
-  --primary-dark: #4f46e5;
-  --secondary: #8b5cf6;
-  --accent: #06b6d4;
-  --success: #10b981;
-  --warning: #f59e0b;
-  --error: #ef4444;
-  --background: #0f0f23;
-  --surface: #1a1a2e;
-  --surface-hover: #2a2a3e;
-  --text-primary: #ffffff;
-  --text-secondary: #a1a1aa;
-  --border: #374151;
 }
 
 html {
@@ -29,93 +16,36 @@ body {
   background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
   background-attachment: fixed;
   min-height: 100vh;
-  color: var(--text-primary);
+  color: #ffffff;
 }
 
 * {
   box-sizing: border-box;
 }
 
-/* Custom Components */
-@layer components {
-  .card {
-    @apply bg-gray-900 bg-opacity-50 backdrop-blur-sm border border-gray-800 border-opacity-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:border-gray-700 hover:border-opacity-50;
-  }
-
-  .card-gradient {
-    @apply bg-gradient-to-br from-gray-900 from-opacity-80 to-gray-800 to-opacity-60 backdrop-blur-sm border border-gray-700 border-opacity-30 rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300;
-  }
-
-  .btn-primary {
-    @apply bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-medium py-2 px-4 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5;
-  }
-
-  .btn-secondary {
-    @apply bg-gray-800 hover:bg-gray-700 text-gray-200 border border-gray-600 rounded-lg py-2 px-4 transition-all duration-200;
-  }
-
-  .stat-card {
-    @apply bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm border border-gray-700/30 rounded-xl p-4 text-center shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105;
-  }
-
-  .nav-link {
-    @apply px-3 py-2 rounded-lg text-lg transition-all duration-200 hover:scale-110;
-  }
-
-  .nav-link.active {
-    @apply bg-gradient-to-r from-indigo-600/20 to-purple-600/20 text-white border border-indigo-500/30;
-  }
-
-  .input-field {
-    @apply bg-gray-800/50 border border-gray-600 rounded-lg px-3 py-2 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all duration-200;
-  }
-}
-
-/* Animations */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 5px rgba(99, 102, 241, 0.5); }
-  50% { box-shadow: 0 0 20px rgba(99, 102, 241, 0.8); }
-}
-
-.animate-fade-in {
-  animation: fadeIn 0.5s ease-out;
-}
-
-.animate-pulse-glow {
-  animation: pulse-glow 2s infinite;
-}
-
-/* Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--background);
+  background: #0f0f23;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--border);
+  background: #374151;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--primary);
+  background: #6366f1;
 }
 
-/* Selection */
 ::selection {
   background: rgba(99, 102, 241, 0.3);
   color: white;
 }
 
-/* Focus styles */
 *:focus-visible {
-  outline: 2px solid var(--primary);
+  outline: 2px solid #6366f1;
   outline-offset: 2px;
 }
